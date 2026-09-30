@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cerrajería Spikerman
 
-## Getting Started
+Sitio web premium para [cerrajeriaspikerman.com](https://cerrajeriaspikerman.com/) — Next.js 16, multi-idioma (ES/EN/PT), catálogo Star, cotizador, panel admin y WhatsApp integrado.
 
-First, run the development server:
+## Desarrollo local
 
 ```bash
+npm install
+npm run db:migrate
+npm run db:seed
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Servidor de desarrollo |
+| `npm run build` | Build de producción |
+| `npm run db:seed` | Cargar catálogo y datos iniciales |
+| `npm run db:studio` | Prisma Studio (administrar DB) |
 
-## Learn More
+## Variables de entorno
 
-To learn more about Next.js, take a look at the following resources:
+Copiá `.env.example` a `.env` y completá:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Supabase** — auth del panel `/admin`
+- **RESEND_API_KEY** — emails de contacto/cotizaciones (opcional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy en Vercel
 
-## Deploy on Vercel
+1. Conectá el repositorio en Vercel
+2. Configurá las variables de entorno
+3. Para PostgreSQL en producción, cambiá `DATABASE_URL` a Supabase/Neon y el provider en `prisma/schema.prisma` a `postgresql`
+4. Apuntá el dominio `cerrajeriaspikerman.com` a Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Estructura (single page)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Todo el sitio vive en una sola página con navegación por anclas:
+
+| Sección | Ancla |
+|---------|-------|
+| Inicio | `#inicio` |
+| Servicios | `#servicios` |
+| Cerraduras Star | `#cerraduras` |
+| Control de accesos | `#control-de-accesos` |
+| Puertas Blindex | `#puertas-blindex` |
+| Cotizador | `#cotizar` |
+| Contacto | `#contacto` |
+
+Las rutas antiguas (`/servicios`, `/cerraduras`, etc.) redirigen automáticamente a la ancla correspondiente.
+
+- `/admin` — Panel de gestión de productos (ruta separada)

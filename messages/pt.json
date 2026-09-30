@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "Chaveiro Spikerman | Urgências 24h Montevidéu",
+    "description": "Chaveiro de urgência 24h em Montevidéu. Abertura de portas, fechaduras Star, controle de acesso e portas Blindex. +800 avaliações no Google."
+  },
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "locks": "Fechaduras",
+    "accessControl": "Controle de acesso",
+    "blindex": "Portas Blindex",
+    "quote": "Orçamento",
+    "contact": "Contato",
+    "callNow": "Ligar",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "badge": "Urgências 24h · Montevidéu",
+    "title": "Chaveiro de confiança quando você mais precisa",
+    "subtitle": "Abertura de portas, fechaduras Star, controle de acesso e Blindex. Atendimento imediato, 365 dias por ano.",
+    "ctaQuote": "Pedir orçamento",
+    "ctaWhatsapp": "Urgência via WhatsApp",
+    "ctaReviews": "Ver avaliações verificadas"
+  },
+  "trust": {
+    "reviews": "avaliações no Google",
+    "experience": "anos de experiência",
+    "emergency": "urgências",
+    "days": "dias por ano",
+    "rupe": "Registrados no RUPE"
+  },
+  "home": {
+    "servicesTitle": "Serviços integrais",
+    "servicesSubtitle": "Soluções para residências, empresas, veículos e edifícios",
+    "catalogTitle": "Catálogo Star",
+    "catalogSubtitle": "Fechaduras, monoblock e ferrolhos com instalação profissional",
+    "viewCatalog": "Ver catálogo completo",
+    "whyTitle": "Por que nos escolher",
+    "whyItems": {
+      "speed": { "title": "Resposta rápida", "desc": "Urgências atendidas rapidamente em Montevidéu." },
+      "trust": { "title": "Reputação comprovada", "desc": "Mais de 800 avaliações reais de clientes satisfeitos." },
+      "quality": { "title": "Marcas premium", "desc": "Produtos Star oficiais com garantia de qualidade." },
+      "coverage": { "title": "Cobertura total", "desc": "Serviço a domicílio 24h e loja de seg a sáb." }
+    },
+    "stats": {
+      "years": "Anos de experiência",
+      "clients": "Avaliações no Google",
+      "emergency": "Atendimento de urgências"
+    },
+    "testimonialsEyebrow": "Depoimentos",
+    "testimonialsTitle": "A melhor garantia: nossos clientes",
+    "testimonialsLink": "Ver todas as avaliações",
+    "testimonials": {
+      "1": "Excelente serviço, chegaram em minutos para uma urgência. Muito profissionais e preço justo.",
+      "2": "Instalaram controle de acesso no edifício. Trabalho impecável e ótima atenção.",
+      "3": "Troquei todas as fechaduras de casa por Star. Recomendo totalmente."
+    },
+    "ctaBannerTitle": "Precisa de um chaveiro agora?",
+    "ctaBannerSubtitle": "Disponíveis 24 horas, 365 dias por ano.",
+    "ctaBannerButton": "Ligar ou WhatsApp",
+    "ctaCall": "Ligar agora"
+  },
+  "services": {
+    "title": "Nossos serviços",
+    "subtitle": "Soluções profissionais de segurança para cada necessidade",
+    "viewDetails": "Ver detalhes",
+    "segments": {
+      "RESIDENTIAL": "Residencial",
+      "COMMERCIAL": "Empresas",
+      "VEHICLE": "Veículos",
+      "BUILDING": "Edifícios"
+    }
+  },
+  "catalog": {
+    "eyebrow": "Catálogo",
+    "title": "Fechaduras Star",
+    "subtitle": "Catálogo completo com instalação e cópia de chaves",
+    "installNote": "Instalação profissional incluída. Consulte estoque e variantes.",
+    "perkInstall": "Instalação profissional incluída",
+    "perkWarranty": "Assessoria e garantia Star",
+    "perkStock": "Consulte estoque e variantes",
+    "filterAll": "Todos",
+    "filterLock": "Fechaduras",
+    "filterMonoblock": "Monoblock",
+    "filterDeadbolt": "Ferrolhos",
+    "productCount": "produtos",
+    "showAll": "Ver catálogo completo",
+    "showLess": "Ver menos",
+    "emptyFilter": "Não há produtos nesta categoria.",
+    "includes": "Inclui",
+    "consult": "Consultar",
+    "backToCatalog": "Voltar ao catálogo",
+    "ctaTitle": "Não encontrou o que precisa?",
+    "ctaSubtitle": "Faça um orçamento online e indicamos a fechadura ideal.",
+    "ctaButton": "Orçar agora"
+  },
+  "accessControl": {
+    "eyebrow": "Tecnologia",
+    "title": "Controle de acesso",
+    "subtitle": "Para edifícios e empresas",
+    "intro": "Mostramos alguns dos nossos trabalhos em instalação de sistemas de controle de acesso em residências, escritórios e espaços comerciais. Cada instalação é pensada para oferecer segurança e conforto.",
+    "introExtended": "Os sistemas permitem abrir portas por impressão digital, cartão, código ou controle remoto. Incluímos fonte com bateria para funcionamento mesmo com queda de energia (220V).",
+    "perkIntegral": "Serviço integral",
+    "perkEmergency": "Urgências 24h",
+    "perkQuote": "Orçamentos sem custo",
+    "cta": "Solicitar orçamento",
+    "features": {
+      "fingerprint": "Impressão digital",
+      "card": "Cartão sem contato",
+      "tag": "TAG",
+      "code": "Código de acesso",
+      "electronic": "Fechadura eletrônica",
+      "battery": "Fonte com bateria para quedas de energia"
+    },
+    "galleryTitle": "Trabalhos realizados",
+    "gallerySubtitle": "Instalações de controle de acesso em edifícios, escritórios e comércios."
+  },
+  "serviceDetail": {
+    "eyebrow": "Serviços",
+    "title": "Realizamos todo tipo de chaves",
+    "subtitle": "Soluções para residências, comércios, veículos e edifícios em Montevidéu.",
+    "keysTitle": "Cópia de chaves",
+    "keys": {
+      "yale": "Chaves Yale",
+      "multipunto": "Chaves Multiponto",
+      "doblePaleta": "Chaves Dupla Paleta",
+      "tag": "Chaves Tag"
+    },
+    "segments": {
+      "residential": {
+        "title": "Residencial",
+        "items": ["Abertura de portas", "Reparos", "Troca de fechaduras", "Abertura de cofres", "Troca de combinação"]
+      },
+      "commercial": {
+        "title": "Empresas",
+        "items": ["Portas Blindex, ferragens e molas de piso", "Manutenção", "Nivelamento de portas", "Rodapés superior e inferior"]
+      },
+      "vehicle": {
+        "title": "Veículos",
+        "items": ["Abertura de portas"]
+      },
+      "building": {
+        "title": "Edifícios",
+        "items": ["Controle de acesso"]
+      }
+    },
+    "cta": "Pedir orçamento"
+  },
+  "blindex": {
+    "title": "Portas Blindex",
+    "subtitle": "Serviço integral para comércios e empresas",
+    "items": {
+      "hardware": "Fornecimento de ferragens e molas de piso",
+      "maintenance": "Manutenção preventiva e corretiva",
+      "leveling": "Nivelamento de portas",
+      "sills": "Peitoris superior e inferior"
+    },
+    "rupe": "Registrados no RUPE"
+  },
+  "quote": {
+    "title": "Orçamento online",
+    "subtitle": "Conte o que precisa e responderemos em breve",
+    "step1": "Serviço",
+    "step2": "Urgência",
+    "step3": "Detalhes",
+    "step4": "Contato",
+    "services": {
+      "apertura": "Abertura de porta",
+      "cerradura": "Troca de fechadura",
+      "accesos": "Controle de acesso",
+      "blindex": "Portas Blindex",
+      "llaves": "Cópia de chaves",
+      "otro": "Outro serviço"
+    },
+    "urgency": {
+      "now": "Urgente — agora",
+      "today": "Hoje",
+      "scheduled": "Agendar visita"
+    },
+    "fields": {
+      "details": "Detalhes do trabalho",
+      "detailsPlaceholder": "Tipo de porta, quantidade de fechaduras, endereço aproximado...",
+      "name": "Nome",
+      "phone": "Telefone",
+      "neighborhood": "Bairro"
+    },
+    "submit": "Enviar e abrir WhatsApp",
+    "success": "Solicitação enviada! Redirecionando para o WhatsApp."
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "title": "Estamos para ajudar",
+    "subtitle": "Loja na Salto 1175 ou urgências a domicílio 24 horas",
+    "address": "Endereço",
+    "phone": "Telefone",
+    "whatsapp": "WhatsApp urgências",
+    "hours": "Horário da loja",
+    "emergency": "Urgências",
+    "formTitle": "Enviar consulta",
+    "formHint": "Respondemos em breve por email ou telefone.",
+    "name": "Nome",
+    "email": "Email",
+    "phoneField": "Telefone",
+    "message": "Mensagem",
+    "messagePlaceholder": "Conte o que você precisa…",
+    "send": "Enviar mensagem",
+    "sending": "Enviando…",
+    "success": "Mensagem enviada",
+    "successHint": "Obrigado pelo contato. Responderemos em breve.",
+    "callNow": "Ligar agora",
+    "openMaps": "Abrir no Google Maps"
+  },
+  "footer": {
+    "description": "Chaveiro de urgência em Montevidéu. Mais de 15 anos oferecendo segurança e confiança.",
+    "quickLinks": "Links",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados."
+  },
+  "common": {
+    "learnMore": "Saiba mais",
+    "getQuote": "Orçamento",
+    "loading": "Carregando..."
+  }
+}

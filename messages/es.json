@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "title": "Cerrajería Spikerman | Urgencias 24 hs Montevideo",
+    "description": "Cerrajería de urgencias 24 hs en Montevideo. Apertura de puertas, cerraduras Star, control de accesos y puertas Blindex. +800 reseñas en Google."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "locks": "Cerraduras",
+    "accessControl": "Control de accesos",
+    "blindex": "Puertas Blindex",
+    "quote": "Cotizar",
+    "contact": "Contacto",
+    "callNow": "Llamar ahora",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "badge": "Seguridad en cada acceso",
+    "title": "Cerrajería Spikerman",
+    "subtitle": "Soluciones profesionales en cerrajería, cerraduras de seguridad y control de accesos. Atención 24 hs en Montevideo con la confianza de más de 15 años.",
+    "ctaPrimary": "Solicitar servicio",
+    "ctaSecondary": "Ver servicios",
+    "ctaQuote": "Pedir cotización",
+    "ctaWhatsapp": "Urgencia por WhatsApp",
+    "ctaReviews": "Ver reseñas verificadas",
+    "features": {
+      "professional": "Servicio profesional",
+      "fast": "Atención rápida",
+      "quote": "Presupuesto sin compromiso"
+    }
+  },
+  "trust": {
+    "reviews": "reseñas en Google",
+    "experience": "años de experiencia",
+    "emergency": "urgencias",
+    "days": "días al año",
+    "rupe": "Registrados en RUPE"
+  },
+  "home": {
+    "servicesTitle": "Servicios integrales",
+    "servicesSubtitle": "Soluciones para hogares, empresas, vehículos y edificios",
+    "catalogTitle": "Catálogo Star",
+    "catalogSubtitle": "Cerraduras, monoblock y cerrojos con instalación profesional",
+    "viewCatalog": "Ver catálogo completo",
+    "whyTitle": "Por qué elegirnos",
+    "whyEyebrow": "Nuestra experiencia",
+    "whyDarkTitle": "Experiencia, confianza y seguridad",
+    "whyDarkSubtitle": "Más de 15 años brindando soluciones de cerrajería en Montevideo. Técnicos certificados, marcas premium y atención de urgencias las 24 horas.",
+    "whyCta": "Conocer más",
+    "stats": {
+      "years": "Años de experiencia",
+      "clients": "Reseñas en Google",
+      "emergency": "Atención de urgencias"
+    },
+    "testimonialsEyebrow": "Testimonios",
+    "testimonialsTitle": "La mejor garantía, nuestros clientes",
+    "testimonialsLink": "Ver todas las reseñas",
+    "testimonials": {
+      "1": "Excelente servicio, llegaron en minutos para una urgencia. Muy profesionales y precio justo.",
+      "2": "Instalaron un control de accesos en el edificio. Trabajo impecable y muy buena atención.",
+      "3": "Cambié todas las cerraduras de casa con cerraduras Star. Recomendado totalmente."
+    },
+    "ctaBannerTitle": "¿Necesitás un cerrajero ahora?",
+    "ctaBannerSubtitle": "Estamos disponibles las 24 horas, los 365 días del año.",
+    "ctaBannerButton": "Llamar o escribir por WhatsApp",
+    "ctaCall": "Llamar ahora",
+    "whyItems": {
+      "speed": { "title": "Respuesta rápida", "desc": "Urgencias atendidas en tiempo récord en todo Montevideo." },
+      "trust": { "title": "Reputación comprobada", "desc": "Más de 800 reseñas reales de clientes satisfechos." },
+      "quality": { "title": "Marcas premium", "desc": "Distribuidores oficiales Star con garantía de calidad." },
+      "coverage": { "title": "Cobertura total", "desc": "Servicio a domicilio 24 hs y local de lunes a sábado." }
+    }
+  },
+  "services": {
+    "eyebrow": "Nuestros servicios",
+    "title": "Soluciones en cerrajería y cerraduras",
+    "subtitle": "Atención profesional para cada necesidad de seguridad",
+    "viewAll": "Ver todos los servicios",
+    "viewMore": "Ver más",
+    "brands": "Marcas con las que trabajamos",
+    "viewDetails": "Ver detalle",
+    "cards": {
+      "locks": {
+        "title": "Cerraduras de seguridad",
+        "desc": "Instalación y cambio de cerraduras Star, cerrojos y sistemas multipunto."
+      },
+      "access": {
+        "title": "Control de accesos",
+        "desc": "Huella, tarjeta, TAG y código para edificios y empresas."
+      },
+      "blindex": {
+        "title": "Puertas Blindex",
+        "desc": "Mantenimiento, herrajes, nivelación y zócalos para comercios."
+      },
+      "emergency": {
+        "title": "Urgencias 24 hs",
+        "desc": "Apertura de puertas, vehículos y cajas fuertes sin daños."
+      }
+    },
+    "segments": {
+      "RESIDENTIAL": "Residencial",
+      "COMMERCIAL": "Empresas",
+      "VEHICLE": "Vehículos",
+      "BUILDING": "Edificios"
+    }
+  },
+  "catalog": {
+    "eyebrow": "Catálogo",
+    "title": "Cerraduras Star",
+    "subtitle": "Catálogo completo con instalación y duplicado de llaves",
+    "installNote": "Instalación profesional incluida. Consultá por stock y variantes.",
+    "perkInstall": "Instalación profesional incluida",
+    "perkWarranty": "Asesoramiento y garantía Star",
+    "perkStock": "Consultá stock y variantes",
+    "filterAll": "Todos",
+    "filterLock": "Cerraduras",
+    "filterMonoblock": "Monoblock",
+    "filterDeadbolt": "Cerrojos",
+    "productCount": "productos",
+    "showAll": "Ver catálogo completo",
+    "showLess": "Ver menos",
+    "emptyFilter": "No hay productos en esta categoría.",
+    "includes": "Incluye",
+    "consult": "Consultar",
+    "backToCatalog": "Volver al catálogo",
+    "ctaTitle": "¿No encontrás lo que buscás?",
+    "ctaSubtitle": "Cotizá online y te asesoramos con la cerradura ideal.",
+    "ctaButton": "Cotizar ahora"
+  },
+  "accessControl": {
+    "eyebrow": "Tecnología",
+    "title": "Control de accesos",
+    "subtitle": "Para edificios y empresas",
+    "intro": "Te mostramos algunos de nuestros trabajos en instalación de sistemas de control de acceso en viviendas, oficinas y espacios comerciales. Cada instalación está pensada para brindar seguridad y comodidad, adaptándose a las necesidades del lugar y del cliente.",
+    "introExtended": "Los sistemas permiten abrir puertas mediante huella digital, tarjeta, código o control remoto. Además, suministramos una fuente con batería incluida, que garantiza el funcionamiento del sistema incluso ante cortes de energía eléctrica (220V). Seguridad continua, sin interrupciones.",
+    "perkIntegral": "Servicio integral",
+    "perkEmergency": "Urgencias 24 hs",
+    "perkQuote": "Presupuestos sin cargo",
+    "cta": "Solicitar presupuesto",
+    "features": {
+      "fingerprint": "Huella digital",
+      "card": "Tarjeta sin contacto",
+      "tag": "TAG",
+      "code": "Código de acceso",
+      "electronic": "Cerradura electrónica",
+      "battery": "Fuente con batería ante cortes de 220V"
+    },
+    "galleryTitle": "Trabajos realizados",
+    "gallerySubtitle": "Instalaciones de control de acceso en edificios, oficinas y comercios."
+  },
+  "serviceDetail": {
+    "eyebrow": "Servicios",
+    "title": "Se realizan todo tipo de llaves",
+    "subtitle": "Soluciones para hogares, comercios, vehículos y edificios en Montevideo.",
+    "keysTitle": "Duplicado de llaves",
+    "keys": {
+      "yale": "Llaves Yale",
+      "multipunto": "Llaves Multipunto",
+      "doblePaleta": "Llaves Doble Paleta",
+      "tag": "Llaves Tag"
+    },
+    "segments": {
+      "residential": {
+        "title": "Residencial",
+        "items": [
+          "Apertura de puertas",
+          "Reparaciones",
+          "Cambio de cerraduras",
+          "Apertura de cajas fuertes",
+          "Cambio de combinación"
+        ]
+      },
+      "commercial": {
+        "title": "Empresas",
+        "items": [
+          "Puertas Blindex, suministro de herrajes y frenos de piso",
+          "Mantenimiento",
+          "Nivelación de puertas",
+          "Zócalos superior e inferior"
+        ]
+      },
+      "vehicle": {
+        "title": "Vehículos",
+        "items": ["Apertura de puertas"]
+      },
+      "building": {
+        "title": "Edificios",
+        "items": ["Control de accesos"]
+      }
+    },
+    "cta": "Pedir cotización"
+  },
+  "blindex": {
+    "eyebrow": "Comercial",
+    "title": "Puertas Blindex",
+    "subtitle": "Servicio integral para comercios y empresas",
+    "items": {
+      "hardware": "Suministro de herrajes y frenos de piso",
+      "maintenance": "Mantenimiento preventivo y correctivo",
+      "leveling": "Nivelación de puertas",
+      "sills": "Zócalos superior e inferior"
+    },
+    "rupe": "Estamos registrados en RUPE"
+  },
+  "quote": {
+    "eyebrow": "Cotización",
+    "title": "Cotizador online",
+    "subtitle": "Contanos qué necesitás y te respondemos a la brevedad",
+    "step1": "Servicio",
+    "step2": "Urgencia",
+    "step3": "Detalles",
+    "step4": "Contacto",
+    "services": {
+      "apertura": "Apertura de puerta",
+      "cerradura": "Cambio de cerradura",
+      "accesos": "Control de accesos",
+      "blindex": "Puertas Blindex",
+      "llaves": "Duplicado de llaves",
+      "otro": "Otro servicio"
+    },
+    "urgency": {
+      "now": "Urgente — ahora",
+      "today": "Hoy",
+      "scheduled": "Programar visita"
+    },
+    "fields": {
+      "details": "Detalles del trabajo",
+      "detailsPlaceholder": "Tipo de puerta, cantidad de cerraduras, dirección aproximada...",
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "neighborhood": "Barrio"
+    },
+    "submit": "Enviar y abrir WhatsApp",
+    "success": "¡Solicitud enviada! Te redirigimos a WhatsApp para confirmar."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Estamos para ayudarte",
+    "subtitle": "Local en Salto 1175 o urgencias a domicilio las 24 horas",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "whatsapp": "WhatsApp urgencias",
+    "hours": "Horario del local",
+    "emergency": "Urgencias",
+    "formTitle": "Enviar consulta",
+    "formHint": "Te respondemos a la brevedad por email o teléfono.",
+    "name": "Nombre",
+    "email": "Email",
+    "phoneField": "Teléfono",
+    "message": "Mensaje",
+    "messagePlaceholder": "Contanos qué necesitás…",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "Mensaje enviado",
+    "successHint": "Gracias por contactarnos. Te responderemos pronto.",
+    "callNow": "Llamar ahora",
+    "openMaps": "Abrir en Google Maps"
+  },
+  "footer": {
+    "description": "Cerrajería de urgencias en Montevideo. Más de 15 años brindando seguridad y confianza.",
+    "quickLinks": "Enlaces",
+    "contact": "Contacto",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "getQuote": "Cotizar",
+    "loading": "Cargando..."
+  }
+}

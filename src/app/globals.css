@@ -1,26 +1,144 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0f1a;
+  --foreground: #e2e8f0;
+  --muted: #94a3b8;
+  --surface: #141c2e;
+  --surface-elevated: #1a2332;
+  --dark: #0a0f1a;
+  --dark-elevated: #141c2e;
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #f97316;
+  --accent-muted: rgba(249, 115, 22, 0.15);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-dark: var(--dark);
+  --color-dark-elevated: var(--dark-elevated);
+  --color-navy-950: #0a0f1a;
+  --color-navy-900: #141c2e;
+  --color-navy-800: #1e293b;
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-jakarta);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.35);
+  color: #fff;
+}
+
+/* Pill buttons */
+.btn-pill {
+  @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200;
+}
+
+.btn-pill-white {
+  @apply bg-orange-500 text-white shadow-md shadow-orange-500/25 hover:bg-orange-600;
+}
+
+.btn-pill-outline {
+  @apply border border-white/40 bg-transparent text-white hover:bg-white/10;
+}
+
+.btn-pill-dark {
+  @apply bg-orange-500 text-white hover:bg-orange-600;
+}
+
+/* Section backgrounds */
+.section-dark {
+  background-color: #0a0f1a;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(59, 130, 246, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 80%, rgba(249, 115, 22, 0.05), transparent);
+  color: #e2e8f0;
+}
+
+/* Section tags */
+.section-tag {
+  @apply text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500;
+}
+
+.section-tag-light {
+  @apply text-[11px] font-bold uppercase tracking-[0.2em] text-orange-400/90;
+}
+
+.section-tag-accent {
+  @apply inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-orange-400;
+}
+
+.section-tag-accent::before {
+  content: "";
+  @apply h-1.5 w-1.5 rounded-full bg-orange-500;
+}
+
+/* Cards & surfaces */
+.surface-card {
+  @apply rounded-2xl border border-white/10 bg-slate-900/60 backdrop-blur-sm;
+}
+
+.card-minimal {
+  @apply overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 transition-all duration-300 hover:border-white/20 hover:shadow-xl hover:shadow-black/30;
+}
+
+.catalog-filter-bar {
+  @apply rounded-2xl border border-white/10 bg-slate-900/70 p-1.5 shadow-lg shadow-black/20 backdrop-blur-xl;
+}
+
+.product-card {
+  @apply flex flex-col overflow-hidden rounded-2xl bg-slate-900/80 shadow-lg shadow-black/30 ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/40 hover:ring-orange-500/30;
+}
+
+.product-card-image-wrap {
+  @apply relative aspect-[5/4] overflow-hidden bg-transparent;
+}
+
+.product-card-image-wrap img {
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.35));
+}
+
+.service-card-compact:focus-visible {
+  @apply outline-none ring-2 ring-orange-500 ring-offset-2 ring-offset-[#0a0f1a];
+}
+
+@keyframes marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(calc(-1 * var(--marquee-shift, 0px)), 0, 0); }
+}
+
+.marquee-track-active {
+  animation: marquee-scroll var(--marquee-duration, 30s) linear infinite;
+  will-change: transform;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }

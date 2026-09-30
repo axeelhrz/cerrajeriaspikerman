@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "Spikerman Locksmith | 24h Emergency Montevideo",
+    "description": "24-hour emergency locksmith in Montevideo. Door opening, Star locks, access control and Blindex doors. 800+ Google reviews."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "locks": "Locks",
+    "accessControl": "Access control",
+    "blindex": "Blindex doors",
+    "quote": "Get quote",
+    "contact": "Contact",
+    "callNow": "Call",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "badge": "24h emergency · Montevideo",
+    "title": "Trusted locksmith when you need it most",
+    "subtitle": "Door opening, Star locks, access control and Blindex. Immediate service, 365 days a year.",
+    "ctaQuote": "Request a quote",
+    "ctaWhatsapp": "Emergency via WhatsApp",
+    "ctaReviews": "See verified reviews"
+  },
+  "trust": {
+    "reviews": "Google reviews",
+    "experience": "years of experience",
+    "emergency": "emergency",
+    "days": "days a year",
+    "rupe": "Registered in RUPE"
+  },
+  "home": {
+    "servicesTitle": "Full services",
+    "servicesSubtitle": "Solutions for homes, businesses, vehicles and buildings",
+    "catalogTitle": "Star catalog",
+    "catalogSubtitle": "Locks, monoblock and deadbolts with professional installation",
+    "viewCatalog": "View full catalog",
+    "whyTitle": "Why choose us",
+    "whyItems": {
+      "speed": { "title": "Fast response", "desc": "Emergencies handled quickly across Montevideo." },
+      "trust": { "title": "Proven reputation", "desc": "800+ real reviews from satisfied customers." },
+      "quality": { "title": "Premium brands", "desc": "Official Star products with quality guarantee." },
+      "coverage": { "title": "Full coverage", "desc": "24h on-site service and shop Mon–Sat." }
+    },
+    "stats": {
+      "years": "Years of experience",
+      "clients": "Google reviews",
+      "emergency": "Emergency service"
+    },
+    "testimonialsEyebrow": "Testimonials",
+    "testimonialsTitle": "Our best guarantee: our clients",
+    "testimonialsLink": "See all reviews",
+    "testimonials": {
+      "1": "Excellent service—they arrived in minutes for an emergency. Very professional and fair price.",
+      "2": "They installed access control in our building. Impeccable work and great attention.",
+      "3": "I changed all home locks to Star. Highly recommended."
+    },
+    "ctaBannerTitle": "Need a locksmith now?",
+    "ctaBannerSubtitle": "Available 24 hours a day, 365 days a year.",
+    "ctaBannerButton": "Call or WhatsApp",
+    "ctaCall": "Call now"
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Professional security solutions for every need",
+    "viewDetails": "View details",
+    "segments": {
+      "RESIDENTIAL": "Residential",
+      "COMMERCIAL": "Commercial",
+      "VEHICLE": "Vehicles",
+      "BUILDING": "Buildings"
+    }
+  },
+  "catalog": {
+    "eyebrow": "Catalog",
+    "title": "Star locks",
+    "subtitle": "Full catalog with installation and key duplication",
+    "installNote": "Professional installation included. Ask about stock and variants.",
+    "perkInstall": "Professional installation included",
+    "perkWarranty": "Star warranty and expert advice",
+    "perkStock": "Ask about stock and variants",
+    "filterAll": "All",
+    "filterLock": "Locks",
+    "filterMonoblock": "Monoblock",
+    "filterDeadbolt": "Deadbolts",
+    "productCount": "products",
+    "showAll": "View full catalog",
+    "showLess": "Show less",
+    "emptyFilter": "No products in this category.",
+    "includes": "Includes",
+    "consult": "Inquire",
+    "backToCatalog": "Back to catalog",
+    "ctaTitle": "Can't find what you need?",
+    "ctaSubtitle": "Get a quote online and we'll recommend the right lock.",
+    "ctaButton": "Get a quote"
+  },
+  "accessControl": {
+    "eyebrow": "Technology",
+    "title": "Access control",
+    "subtitle": "For buildings and businesses",
+    "intro": "We install access control systems in homes, offices and commercial spaces tailored to each client's needs.",
+    "introExtended": "Systems support fingerprint, card, code or remote access. Battery backup ensures operation during power outages (220V).",
+    "perkIntegral": "Full service",
+    "perkEmergency": "24/7 emergencies",
+    "perkQuote": "Free quotes",
+    "cta": "Request a quote",
+    "features": {
+      "fingerprint": "Fingerprint",
+      "card": "Contactless card",
+      "tag": "TAG",
+      "code": "Access code",
+      "electronic": "Electronic lock",
+      "battery": "Battery backup for power outages"
+    },
+    "galleryTitle": "Our work",
+    "gallerySubtitle": "Access control installations in buildings, offices and retail."
+  },
+  "serviceDetail": {
+    "eyebrow": "Services",
+    "title": "All types of keys",
+    "subtitle": "Solutions for homes, businesses, vehicles and buildings in Montevideo.",
+    "keysTitle": "Key duplication",
+    "keys": {
+      "yale": "Yale keys",
+      "multipunto": "Multipoint keys",
+      "doblePaleta": "Double-bit keys",
+      "tag": "Tag keys"
+    },
+    "segments": {
+      "residential": {
+        "title": "Residential",
+        "items": ["Door opening", "Repairs", "Lock replacement", "Safe opening", "Combination change"]
+      },
+      "commercial": {
+        "title": "Commercial",
+        "items": ["Blindex doors, hardware and floor closers", "Maintenance", "Door leveling", "Top and bottom seals"]
+      },
+      "vehicle": {
+        "title": "Vehicles",
+        "items": ["Door opening"]
+      },
+      "building": {
+        "title": "Buildings",
+        "items": ["Access control"]
+      }
+    },
+    "cta": "Get a quote"
+  },
+  "blindex": {
+    "title": "Blindex doors",
+    "subtitle": "Full service for shops and businesses",
+    "items": {
+      "hardware": "Hardware and floor closers supply",
+      "maintenance": "Preventive and corrective maintenance",
+      "leveling": "Door leveling",
+      "sills": "Top and bottom sills"
+    },
+    "rupe": "Registered in RUPE"
+  },
+  "quote": {
+    "title": "Online quote",
+    "subtitle": "Tell us what you need and we'll respond promptly",
+    "step1": "Service",
+    "step2": "Urgency",
+    "step3": "Details",
+    "step4": "Contact",
+    "services": {
+      "apertura": "Door opening",
+      "cerradura": "Lock replacement",
+      "accesos": "Access control",
+      "blindex": "Blindex doors",
+      "llaves": "Key duplication",
+      "otro": "Other service"
+    },
+    "urgency": {
+      "now": "Urgent — now",
+      "today": "Today",
+      "scheduled": "Schedule visit"
+    },
+    "fields": {
+      "details": "Job details",
+      "detailsPlaceholder": "Door type, number of locks, approximate address...",
+      "name": "Name",
+      "phone": "Phone",
+      "neighborhood": "Neighborhood"
+    },
+    "submit": "Submit and open WhatsApp",
+    "success": "Request sent! Redirecting to WhatsApp to confirm."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "We're here to help",
+    "subtitle": "Visit us at Salto 1175 or call for 24h emergency service",
+    "address": "Address",
+    "phone": "Phone",
+    "whatsapp": "Emergency WhatsApp",
+    "hours": "Shop hours",
+    "emergency": "Emergencies",
+    "formTitle": "Send inquiry",
+    "formHint": "We'll get back to you shortly by email or phone.",
+    "name": "Name",
+    "email": "Email",
+    "phoneField": "Phone",
+    "message": "Message",
+    "messagePlaceholder": "Tell us what you need…",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Message sent",
+    "successHint": "Thanks for reaching out. We'll reply soon.",
+    "callNow": "Call now",
+    "openMaps": "Open in Google Maps"
+  },
+  "footer": {
+    "description": "Emergency locksmith in Montevideo. 15+ years providing security and trust.",
+    "quickLinks": "Links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "getQuote": "Get quote",
+    "loading": "Loading..."
+  }
+}
