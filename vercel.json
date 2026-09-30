@@ -1,4 +1,11 @@
 {
-  "buildCommand": "prisma generate && prisma migrate deploy && next build",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "buildCommand": "prisma generate && prisma migrate deploy && prisma db seed && next build",
+  "env": {
+    "DATABASE_URL": "file:./prisma/prod.db",
+    "NEXT_PUBLIC_SITE_URL": "https://cerrajeriaspikerman.com",
+    "NEXT_PUBLIC_WHATSAPP": "59899803111",
+    "NEXT_PUBLIC_PHONE": "24102153",
+    "NEXT_PUBLIC_GA_ID": "G-2MGSTSY3N8"
+  }
 }
