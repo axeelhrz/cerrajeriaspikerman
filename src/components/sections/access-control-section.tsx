@@ -51,7 +51,7 @@ export async function AccessControlSection() {
           </div>
         </div>
 
-        <div className="mb-10 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-10 grid grid-cols-1 gap-2 min-[480px]:grid-cols-2 lg:grid-cols-3">
           {features.map(({ key, icon: Icon }) => (
             <div key={key} className="surface-card flex items-center gap-3 px-4 py-3">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-500/15 text-orange-400">

@@ -10,7 +10,7 @@ function SpikermanKey({ holeFill }: { holeFill: string }) {
   return (
     <svg
       viewBox="0 0 58 30"
-      className="h-8 w-[3.35rem] shrink-0 md:h-9 md:w-[3.75rem]"
+      className="h-7 w-[2.9rem] shrink-0 sm:h-8 sm:w-[3.35rem] md:h-9 md:w-[3.75rem]"
       aria-hidden
     >
       <g fill="#f97316" stroke="#111827" strokeWidth="1.15" strokeLinejoin="round" strokeLinecap="round">
@@ -40,13 +40,13 @@ export function Logo({ variant = "light", className }: LogoProps) {
   const holeFill = isLight ? "#0a0f1a" : "#ffffff";
 
   return (
-    <div className={cn("flex items-center gap-2.5", className)}>
+    <div className={cn("flex min-w-0 items-center gap-2 sm:gap-2.5", className)}>
       <SpikermanKey holeFill={holeFill} />
 
-      <div className="leading-none">
+      <div className="min-w-0 leading-none">
         <span
           className={cn(
-            "block text-[9px] font-bold uppercase tracking-[0.22em] md:text-[10px]",
+            "block text-[8px] font-bold uppercase tracking-[0.18em] sm:text-[9px] sm:tracking-[0.22em] md:text-[10px]",
             isLight ? "text-white/75" : "text-slate-600"
           )}
         >
@@ -54,7 +54,7 @@ export function Logo({ variant = "light", className }: LogoProps) {
         </span>
         <span
           className={cn(
-            "mt-0.5 block text-base font-extrabold uppercase tracking-[0.04em] md:text-lg",
+            "mt-0.5 block truncate text-sm font-extrabold uppercase tracking-[0.04em] sm:text-base md:text-lg",
             isLight ? "text-white" : "text-slate-900"
           )}
         >

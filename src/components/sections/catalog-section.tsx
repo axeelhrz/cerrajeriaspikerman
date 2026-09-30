@@ -45,7 +45,7 @@ export function CatalogSection() {
         <div className="relative grid gap-8 border-b border-white/10 pb-10 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:pb-12">
           <div>
             <p className="section-tag-light">{t("eyebrow")}</p>
-            <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white md:text-4xl lg:text-5xl">
+            <h2 className="mt-4 text-2xl font-extrabold tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
               {t("title")}
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-400">
@@ -53,7 +53,7 @@ export function CatalogSection() {
             </p>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
             {perks.map(({ icon: Icon, key }) => (
               <div
                 key={key}
@@ -69,9 +69,9 @@ export function CatalogSection() {
         </div>
 
         {/* Filtros */}
-        <div className="sticky top-[4.5rem] z-30 mt-8 md:top-20">
+        <div className="catalog-sticky sticky z-30 mt-8">
           <div className="catalog-filter-bar flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-wrap gap-1">
+            <div className="-mx-1 flex gap-1 overflow-x-auto px-1 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:pb-0">
               {filters.map((filter) => (
                 <button
                   key={filter.value}
@@ -81,7 +81,7 @@ export function CatalogSection() {
                     setExpanded(false);
                   }}
                   className={cn(
-                    "rounded-xl px-4 py-2 text-sm font-semibold transition-all",
+                    "shrink-0 rounded-xl px-3 py-2 text-xs font-semibold transition-all sm:px-4 sm:text-sm",
                     category === filter.value
                       ? "bg-orange-500 text-white shadow-md shadow-orange-500/25"
                       : "text-slate-400 hover:bg-white/5 hover:text-white"
@@ -98,7 +98,7 @@ export function CatalogSection() {
         </div>
 
         {/* Grid */}
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <div className="mt-8 grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {visible.map((product) => (
             <ProductCard
               key={product.slug}

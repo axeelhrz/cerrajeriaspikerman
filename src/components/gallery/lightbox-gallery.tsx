@@ -42,7 +42,7 @@ export function LightboxGallery({ images }: { images: GalleryImage[] }) {
 
   return (
     <>
-      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-3 min-[480px]:grid-cols-2 lg:grid-cols-4">
         {images.map((image, index) => (
           <button
             key={image.imageUrl}
@@ -109,7 +109,7 @@ export function LightboxGallery({ images }: { images: GalleryImage[] }) {
           )}
 
           <div
-            className="relative h-[80vh] w-full max-w-5xl px-12 md:px-16"
+            className="relative h-[70vh] w-full max-w-5xl px-2 sm:h-[80vh] sm:px-8 md:px-12"
             onClick={(e) => e.stopPropagation()}
           >
             <Image

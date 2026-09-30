@@ -39,10 +39,10 @@ export async function ServicesDetailSection() {
               {t("keysTitle")}
             </h3>
           </div>
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:grid-cols-4">
             {keyTypes.map(({ key, image }) => (
               <div key={key} className="surface-card flex flex-col text-center">
-                <div className="flex min-h-[148px] flex-1 items-center justify-center px-5 py-6">
+                <div className="flex min-h-[132px] flex-1 items-center justify-center px-4 py-5 sm:min-h-[148px] sm:px-5 sm:py-6">
                   <Image
                     src={image}
                     alt=""

@@ -18,7 +18,7 @@ export async function Footer() {
 
   return (
     <footer className="border-t border-white/10 bg-slate-950">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-12 md:flex-row md:justify-between md:px-8">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 py-10 text-center sm:py-12 md:flex-row md:items-start md:justify-between md:px-8 md:text-left">
         <Logo variant="light" />
 
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
@@ -39,10 +39,11 @@ export async function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-4 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} {siteConfig.name}. {t("rights")}
-        {" · "}
-        <a href={whatsappUrl()} className="hover:text-orange-400">
+      <div className="border-t border-white/10 px-4 py-4 text-center text-xs leading-relaxed text-slate-500">
+        <p className="break-words">
+          © {new Date().getFullYear()} {siteConfig.name}. {t("rights")}
+        </p>
+        <a href={whatsappUrl()} className="mt-1 inline-block hover:text-orange-400">
           WhatsApp {siteConfig.whatsappDisplay}
         </a>
       </div>

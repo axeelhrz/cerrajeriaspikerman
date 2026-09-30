@@ -70,7 +70,7 @@ export function Header() {
       >
         <div
           className={cn(
-            "mx-auto flex max-w-7xl items-center gap-4",
+            "mx-auto flex max-w-7xl min-w-0 items-center gap-2 sm:gap-4",
             "transition-[background-color,box-shadow,border-radius,padding,backdrop-filter] duration-300 ease-out",
             scrolled
               ? "rounded-2xl bg-neutral-950/90 px-4 py-2.5 shadow-[0_8px_32px_rgba(0,0,0,0.5),inset_0_0_0_1px_rgba(255,255,255,0.08)] backdrop-blur-2xl md:rounded-full md:px-6 md:py-3"
@@ -85,24 +85,25 @@ export function Header() {
             <Logo variant="light" />
           </a>
 
-          <div className="hidden flex-1 justify-center lg:flex">
+          <div className="hidden min-w-0 flex-1 justify-center xl:flex">
             <DesktopNav activeSection={activeSection} light showIndicator={scrolled} />
           </div>
 
-          <div className="ml-auto flex items-center gap-2 md:gap-3">
-            <LocaleSwitcher current={locale as Locale} />
+          <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2 md:gap-3">
+            <LocaleSwitcher current={locale as Locale} className="hidden sm:flex" />
 
             <a
               href={phoneUrl()}
-              className="btn-pill hidden bg-orange-500 text-xs text-white shadow-md shadow-orange-500/25 hover:bg-orange-600 md:inline-flex md:text-sm"
+              className="btn-pill hidden bg-orange-500 text-white shadow-md shadow-orange-500/25 hover:bg-orange-600 sm:inline-flex"
+              aria-label={t("callNow")}
             >
-              <Phone className="h-3.5 w-3.5" />
-              {t("callNow")}
+              <Phone className="h-3.5 w-3.5 shrink-0" />
+              <span className="hidden md:inline">{t("callNow")}</span>
             </a>
 
             <button
               type="button"
-              className="inline-flex rounded-full p-2.5 text-white hover:bg-white/10 lg:hidden"
+              className="inline-flex rounded-full p-2.5 text-white hover:bg-white/10 xl:hidden"
               onClick={() => setOpen(true)}
               aria-label="Abrir menú"
             >
@@ -113,7 +114,7 @@ export function Header() {
       </header>
 
       {open && (
-        <div className="fixed inset-0 z-[60] lg:hidden">
+        <div className="fixed inset-0 z-[60] xl:hidden">
           <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setOpen(false)}
@@ -142,10 +143,18 @@ export function Header() {
                 />
               ))}
             </nav>
-            <div className="space-y-2 border-t border-white/10 p-5">
+            <div className="space-y-3 border-t border-white/10 p-5">
+              <LocaleSwitcher current={locale as Locale} className="flex w-full justify-center" />
+              <a
+                href={sectionHref(sections.cotizar)}
+                onClick={() => setOpen(false)}
+                className="btn-pill btn-pill-block border border-orange-500/40 bg-orange-500/10 text-sm text-orange-300 hover:bg-orange-500/20"
+              >
+                {t("quote")}
+              </a>
               <a
                 href={phoneUrl()}
-                className="btn-pill flex w-full items-center justify-center gap-2 bg-orange-500 text-sm text-white hover:bg-orange-600"
+                className="btn-pill btn-pill-block bg-orange-500 text-sm text-white hover:bg-orange-600"
               >
                 <Phone className="h-4 w-4" />
                 {siteConfig.phoneDisplay}
@@ -154,7 +163,7 @@ export function Header() {
                 href={whatsappUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-pill btn-pill-white flex w-full justify-center text-sm"
+                className="btn-pill btn-pill-white btn-pill-block text-sm"
               >
                 WhatsApp
               </a>
@@ -166,9 +175,9 @@ export function Header() {
   );
 }
 
-function LocaleSwitcher({ current }: { current: Locale }) {
+function LocaleSwitcher({ current, className }: { current: Locale; className?: string }) {
   return (
-    <div className="hidden rounded-full bg-white/10 p-0.5 text-[10px] font-bold sm:flex">
+    <div className={cn("rounded-full bg-white/10 p-0.5 text-[10px] font-bold", className)}>
       {routing.locales.map((locale) => (
         <Link
           key={locale}

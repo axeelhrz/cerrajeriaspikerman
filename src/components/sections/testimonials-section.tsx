@@ -38,7 +38,7 @@ export async function TestimonialsSection() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-3 md:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map(({ name, text }) => (
             <figure
               key={name}
@@ -84,11 +84,11 @@ export async function TestimonialsSection() {
                 {t("ctaBannerTitle")}
               </h3>
               <p className="mt-2 text-sm text-slate-400">{t("ctaBannerSubtitle")}</p>
-              <p className="mt-3 text-2xl font-extrabold tracking-tight text-white md:text-3xl">
+              <p className="mt-3 text-xl font-extrabold tracking-tight text-white sm:text-2xl md:text-3xl">
                 {siteConfig.phoneDisplay}
               </p>
             </div>
-            <div className="flex shrink-0 flex-col gap-2 sm:flex-row md:flex-col lg:flex-row">
+            <div className="flex w-full shrink-0 flex-col gap-2 sm:flex-row lg:w-auto lg:flex-col xl:flex-row">
               <a
                 href={phoneUrl()}
                 className="btn-pill btn-pill-white justify-center text-sm"

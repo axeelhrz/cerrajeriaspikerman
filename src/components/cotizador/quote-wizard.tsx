@@ -78,7 +78,7 @@ export function QuoteWizard() {
     "rounded-xl border border-white/10 bg-white/5 p-4 text-left text-sm font-semibold text-slate-200 transition-colors hover:border-orange-500/50 hover:bg-white/10";
 
   return (
-    <div className="surface-card p-6 md:p-8">
+    <div className="surface-card p-4 sm:p-6 md:p-8">
       <div className="mb-8 flex gap-2">
         {steps.map((s, i) => (
           <div key={s} className="flex-1">
@@ -90,7 +90,7 @@ export function QuoteWizard() {
       </div>
 
       {step === 0 && (
-        <div className="grid gap-2 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-2 min-[480px]:grid-cols-2">
           {Object.keys(t.raw("services") as Record<string, string>).map((key) => (
             <button
               key={key}

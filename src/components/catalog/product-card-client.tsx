@@ -28,7 +28,7 @@ export function ProductCard({ product, categoryLabel }: ProductCardProps) {
         />
       </div>
 
-      <div className="flex flex-1 flex-col p-5 pt-4 md:p-6 md:pt-5">
+      <div className="flex flex-1 flex-col p-4 pt-3 sm:p-5 sm:pt-4 md:p-6 md:pt-5">
         <div className="mb-3 flex items-center justify-between gap-2">
           <span className="rounded-full bg-orange-500/15 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-orange-400">
             {categoryLabel}
@@ -39,7 +39,7 @@ export function ProductCard({ product, categoryLabel }: ProductCardProps) {
           </span>
         </div>
 
-        <h3 className="text-lg font-bold leading-snug text-white transition-colors group-hover:text-orange-400">
+        <h3 className="text-base font-bold leading-snug text-white transition-colors group-hover:text-orange-400 sm:text-lg">
           {product.name}
         </h3>
 

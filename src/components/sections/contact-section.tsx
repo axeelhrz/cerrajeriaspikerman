@@ -79,7 +79,7 @@ export async function ContactSection() {
                         href={row.href}
                         target={row.external ? "_blank" : undefined}
                         rel={row.external ? "noopener noreferrer" : undefined}
-                        className={`mt-0.5 block text-sm font-semibold transition-colors hover:text-orange-400 ${
+                        className={`mt-0.5 block break-words text-sm font-semibold transition-colors hover:text-orange-400 ${
                           row.accent ? "text-emerald-400" : "text-white"
                         }`}
                       >
@@ -96,8 +96,8 @@ export async function ContactSection() {
               ))}
             </div>
 
-            <div className="grid grid-cols-2 gap-2">
-              <a href={phoneUrl()} className="btn-pill btn-pill-white justify-center py-2.5 text-xs">
+            <div className="grid grid-cols-1 gap-2 min-[420px]:grid-cols-2">
+              <a href={phoneUrl()} className="btn-pill btn-pill-white btn-pill-block justify-center py-2.5 text-xs min-[420px]:w-auto">
                 <Phone className="h-3.5 w-3.5" />
                 {t("callNow")}
               </a>
@@ -105,7 +105,7 @@ export async function ContactSection() {
                 href={whatsappUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-pill justify-center border border-emerald-500/30 bg-emerald-500/10 py-2.5 text-xs text-emerald-400 hover:bg-emerald-500/20"
+                className="btn-pill btn-pill-block justify-center border border-emerald-500/30 bg-emerald-500/10 py-2.5 text-xs text-emerald-400 hover:bg-emerald-500/20 min-[420px]:w-auto"
               >
                 <MessageCircle className="h-3.5 w-3.5" />
                 WhatsApp

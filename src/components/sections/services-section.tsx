@@ -70,7 +70,7 @@ export async function ServicesSection() {
               href={sectionHref(section)}
               className="service-card-compact group flex overflow-hidden rounded-xl border border-white/10 bg-slate-900/40 transition-all hover:border-white/20 hover:bg-slate-900/70"
             >
-              <div className="relative w-[88px] shrink-0 self-stretch sm:w-[100px]">
+              <div className="relative w-20 shrink-0 self-stretch sm:w-24 md:w-[100px]">
                 <Image
                   src={image}
                   alt=""
@@ -88,7 +88,7 @@ export async function ServicesSection() {
                   </span>
                   <Icon className="h-3.5 w-3.5 text-slate-500" strokeWidth={1.75} aria-hidden />
                 </div>
-                <h3 className="mt-1 truncate text-sm font-bold text-white sm:text-[15px]">
+                <h3 className="mt-1 line-clamp-2 text-sm font-bold leading-snug text-white sm:text-[15px]">
                   {t(titleKey)}
                 </h3>
                 <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-slate-500">

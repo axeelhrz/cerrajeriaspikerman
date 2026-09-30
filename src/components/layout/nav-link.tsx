@@ -44,7 +44,7 @@ export const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
         onClick={handleClick}
         className={cn(
           "relative whitespace-nowrap font-medium transition-colors duration-200",
-          variant === "desktop" && "px-3 py-2 text-[13px] tracking-wide",
+          variant === "desktop" && "px-2 py-2 text-xs tracking-wide xl:px-3 xl:text-[13px]",
           variant === "desktop" &&
             light &&
             (active

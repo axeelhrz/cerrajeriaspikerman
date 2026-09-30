@@ -101,7 +101,7 @@ export function BrandMarquee() {
   }
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden px-4 md:px-0">
       <div
         ref={trackRef}
         className={cn("marquee-track flex w-max items-center", ready && "marquee-track-active")}
