@@ -210,7 +210,16 @@ h1, h2, h3, h4 {
 .reveal-stagger.is-revealed > *:nth-child(4) { transition-delay: 0.26s; opacity: 1; transform: translateY(0); }
 .reveal-stagger.is-revealed > *:nth-child(5) { transition-delay: 0.33s; opacity: 1; transform: translateY(0); }
 .reveal-stagger.is-revealed > *:nth-child(6) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
-.reveal-stagger.is-revealed > *:nth-child(n+7) { transition-delay: 0.45s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-revealed > *:nth-child(7) { transition-delay: 0.45s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-revealed > *:nth-child(8) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-revealed > *:nth-child(n+9) { transition-delay: 0.52s; opacity: 1; transform: translateY(0); }
+
+/* Listas largas: mostrar todo de inmediato al revelar */
+.reveal-stagger.reveal-stagger-instant > * {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
 
 /* Mobile nav */
 .mobile-nav-item {

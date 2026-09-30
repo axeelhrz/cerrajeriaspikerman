@@ -19,6 +19,9 @@ export function HashScroll() {
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
         window.history.replaceState(null, "", `#${hash}`);
+        el.querySelectorAll(".reveal-on-scroll").forEach((node) => {
+          node.classList.add("is-revealed");
+        });
       }
     }, 150);
 

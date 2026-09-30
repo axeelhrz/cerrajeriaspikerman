@@ -42,27 +42,27 @@ export function CatalogSection() {
     <section id={sections.cerraduras} className="section-dark scroll-mt-24 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         {/* Header */}
-        <div className="reveal-on-scroll relative grid gap-8 border-b border-white/10 pb-10 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:pb-12">
-          <div>
+        <div className="relative grid gap-6 border-b border-white/10 pb-8 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:gap-8 lg:pb-12">
+          <div className="reveal-on-scroll">
             <p className="section-tag-light">{t("eyebrow")}</p>
-            <h2 className="mt-4 text-2xl font-extrabold tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
+            <h2 className="mt-3 text-2xl font-extrabold tracking-tight text-white sm:mt-4 sm:text-3xl md:text-4xl lg:text-5xl">
               {t("title")}
             </h2>
-            <p className="mt-4 max-w-lg text-base leading-relaxed text-slate-400">
+            <p className="mt-3 max-w-lg text-sm leading-relaxed text-slate-400 sm:mt-4 sm:text-base">
               {t("subtitle")}
             </p>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="reveal-on-scroll flex gap-2 overflow-x-auto pb-1 lg:grid lg:grid-cols-1 lg:gap-3 lg:overflow-visible lg:pb-0">
             {perks.map(({ icon: Icon, key }) => (
               <div
                 key={key}
-                className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-sm"
+                className="flex min-w-[11rem] shrink-0 items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 backdrop-blur-sm lg:min-w-0 lg:px-4 lg:py-3"
               >
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-500/20 text-orange-400">
                   <Icon className="h-4 w-4" strokeWidth={1.75} />
                 </div>
-                <p className="text-sm font-medium text-slate-300">{t(key)}</p>
+                <p className="text-xs font-medium leading-snug text-slate-300 sm:text-sm">{t(key)}</p>
               </div>
             ))}
           </div>
@@ -97,8 +97,8 @@ export function CatalogSection() {
           </div>
         </div>
 
-        {/* Grid */}
-        <div className="reveal-on-scroll reveal-stagger mt-8 grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        {/* Grid — sin reveal-stagger: en móvil ocultaba productos */}
+        <div className="mt-6 grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:mt-8 lg:grid-cols-3 lg:gap-6">
           {visible.map((product) => (
             <ProductCard
               key={product.slug}
