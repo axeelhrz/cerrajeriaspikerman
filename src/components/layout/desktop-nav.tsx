@@ -3,20 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { NavLink } from "@/components/layout/nav-link";
-import { sections, type SectionId } from "@/lib/sections";
+import { navItems } from "@/lib/nav-config";
+import type { SectionId } from "@/lib/sections";
 import { cn } from "@/lib/utils";
-
-const navItems: {
-  section: SectionId;
-  key: "home" | "services" | "locks" | "accessControl" | "blindex" | "quote" | "contact";
-}[] = [
-  { section: sections.inicio, key: "home" },
-  { section: sections.servicios, key: "services" },
-  { section: sections.cerraduras, key: "locks" },
-  { section: sections.controlDeAccesos, key: "accessControl" },
-  { section: sections.blindex, key: "blindex" },
-  { section: sections.contacto, key: "contact" },
-];
 
 export function DesktopNav({
   activeSection,
@@ -48,20 +37,22 @@ export function DesktopNav({
 
   return (
     <nav ref={navRef} className="relative flex items-center gap-0.5">
-      {navItems.map((item) => (
-        <NavLink
-          key={item.section}
-          ref={(node) => {
-            if (node) linkRefs.current.set(item.section, node);
-            else linkRefs.current.delete(item.section);
-          }}
-          section={item.section}
-          label={t(item.key)}
-          active={activeSection === item.section}
-          variant="desktop"
-          light={light}
-        />
-      ))}
+      {navItems
+        .filter((item) => item.key !== "quote")
+        .map((item) => (
+          <NavLink
+            key={item.section}
+            ref={(node) => {
+              if (node) linkRefs.current.set(item.section, node);
+              else linkRefs.current.delete(item.section);
+            }}
+            section={item.section}
+            label={t(item.key)}
+            active={activeSection === item.section}
+            variant="desktop"
+            light={light}
+          />
+        ))}
       {showIndicator && (
         <span
           className={cn(

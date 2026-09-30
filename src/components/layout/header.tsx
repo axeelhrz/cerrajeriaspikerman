@@ -1,15 +1,16 @@
 "use client";
 
-import { Link } from "@/i18n/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
-import { NavLink } from "@/components/layout/nav-link";
-import { DesktopNav, navItems } from "@/components/layout/desktop-nav";
+import { DesktopNav } from "@/components/layout/desktop-nav";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { Logo } from "@/components/layout/logo";
-import { siteConfig, phoneUrl, whatsappUrl } from "@/lib/site-config";
+import { phoneUrl } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
-import { routing, type Locale } from "@/i18n/routing";
+import type { Locale } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { sections, sectionHref, type SectionId } from "@/lib/sections";
 
 export function Header() {
@@ -103,9 +104,13 @@ export function Header() {
 
             <button
               type="button"
-              className="inline-flex rounded-full p-2.5 text-white hover:bg-white/10 xl:hidden"
+              className={cn(
+                "inline-flex rounded-full p-2.5 text-white transition-all xl:hidden",
+                open ? "bg-white/15" : "hover:bg-white/10"
+              )}
               onClick={() => setOpen(true)}
               aria-label="Abrir menú"
+              aria-expanded={open}
             >
               <Menu className="h-5 w-5" />
             </button>
@@ -113,64 +118,7 @@ export function Header() {
         </div>
       </header>
 
-      {open && (
-        <div className="fixed inset-0 z-[60] xl:hidden">
-          <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-            onClick={() => setOpen(false)}
-          />
-          <div className="absolute right-0 top-0 flex h-full w-[min(100%,300px)] flex-col bg-neutral-950 text-white">
-            <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
-              <Logo variant="light" />
-              <button
-                type="button"
-                onClick={() => setOpen(false)}
-                className="rounded-full p-2 hover:bg-white/10"
-              >
-                <X className="h-5 w-5" />
-              </button>
-            </div>
-            <nav className="flex-1 overflow-y-auto px-3 py-4">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.section}
-                  section={item.section}
-                  label={t(item.key)}
-                  active={activeSection === item.section}
-                  onNavigate={() => setOpen(false)}
-                  variant="mobile-dark"
-                  light
-                />
-              ))}
-            </nav>
-            <div className="space-y-3 border-t border-white/10 p-5">
-              <LocaleSwitcher current={locale as Locale} className="flex w-full justify-center" />
-              <a
-                href={sectionHref(sections.cotizar)}
-                onClick={() => setOpen(false)}
-                className="btn-pill btn-pill-block border border-orange-500/40 bg-orange-500/10 text-sm text-orange-300 hover:bg-orange-500/20"
-              >
-                {t("quote")}
-              </a>
-              <a
-                href={phoneUrl()}
-                className="btn-pill btn-pill-block bg-orange-500 text-sm text-white hover:bg-orange-600"
-              >
-                <Phone className="h-4 w-4" />
-                {siteConfig.phoneDisplay}
-              </a>
-              <a
-                href={whatsappUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-pill btn-pill-white btn-pill-block text-sm"
-              >
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
+      <MobileNav open={open} onClose={() => setOpen(false)} activeSection={activeSection} />
     </>
   );
 }
@@ -185,9 +133,7 @@ function LocaleSwitcher({ current, className }: { current: Locale; className?: s
           locale={locale}
           className={cn(
             "rounded-full px-2 py-1 uppercase transition-all",
-            current === locale
-              ? "bg-orange-500 text-white"
-              : "text-white/50 hover:text-white"
+            current === locale ? "bg-orange-500 text-white" : "text-white/50 hover:text-white"
           )}
         >
           {locale}

@@ -8,6 +8,7 @@ import { WhatsAppFloat } from "@/components/layout/whatsapp-float";
 import { LocalBusinessSchema } from "@/components/seo/local-business-schema";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 import { HashScroll } from "@/components/layout/hash-scroll";
+import { ScrollRevealInit } from "@/components/layout/scroll-reveal";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -34,6 +35,7 @@ export default async function LocaleLayout({
       <LocalBusinessSchema />
       <GoogleAnalytics />
       <HashScroll />
+      <ScrollRevealInit />
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
