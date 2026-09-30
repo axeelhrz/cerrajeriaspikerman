@@ -1,6 +1,5 @@
 {
   "framework": "nextjs",
-  "buildCommand": "prisma generate && prisma migrate deploy && prisma db seed && next build",
   "env": {
     "DATABASE_URL": "file:./prisma/prod.db",
     "NEXT_PUBLIC_SITE_URL": "https://cerrajeriaspikerman.com",

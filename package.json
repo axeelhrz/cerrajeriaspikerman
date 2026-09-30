@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "build": "DATABASE_URL=file:./prisma/prod.db prisma generate && DATABASE_URL=file:./prisma/prod.db prisma migrate deploy && DATABASE_URL=file:./prisma/prod.db prisma db seed && next build",
     "start": "next start",
     "lint": "eslint",
     "db:migrate": "prisma migrate dev",
     "db:seed": "tsx prisma/seed.ts",
     "db:studio": "prisma studio",
-    "postinstall": "prisma generate"
+    "postinstall": "DATABASE_URL=file:./prisma/dev.db prisma generate"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
