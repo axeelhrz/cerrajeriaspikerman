@@ -53,7 +53,7 @@ export async function ContactSection() {
   return (
     <section id={sections.contacto} className="section-dark scroll-mt-24 py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
-        <div className="mb-8 max-w-lg md:mb-10">
+        <div className="reveal-on-scroll mb-8 max-w-lg md:mb-10">
           <p className="section-tag-light">{t("eyebrow")}</p>
           <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-white md:text-3xl">
             {t("title")}
@@ -61,7 +61,7 @@ export async function ContactSection() {
           <p className="mt-2 text-sm text-slate-400">{t("subtitle")}</p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
+        <div className="reveal-on-scroll reveal-stagger grid gap-6 lg:grid-cols-2 lg:gap-8">
           {/* Info + mapa */}
           <div className="flex flex-col gap-4">
             <div className="surface-card divide-y divide-white/10 overflow-hidden">

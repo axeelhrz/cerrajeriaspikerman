@@ -30,7 +30,7 @@ export async function WhySection() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/70" />
 
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-4 md:px-8 lg:grid-cols-2 lg:gap-20">
+      <div className="reveal-on-scroll relative mx-auto grid max-w-7xl gap-12 px-4 md:px-8 lg:grid-cols-2 lg:gap-20">
         <div>
           <p className="section-tag-light">{t("whyEyebrow")}</p>
           <h2 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight md:text-4xl lg:text-5xl">

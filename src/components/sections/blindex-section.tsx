@@ -15,7 +15,7 @@ export async function BlindexSection() {
   return (
     <section id={sections.blindex} className="section-dark scroll-mt-24 py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="max-w-2xl">
+        <div className="reveal-on-scroll max-w-2xl">
           <p className="section-tag-light">{t("eyebrow")}</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
             {t("title")}
@@ -23,7 +23,7 @@ export async function BlindexSection() {
           <p className="mt-4 text-slate-400">{t("subtitle")}</p>
         </div>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+        <div className="reveal-on-scroll reveal-stagger mt-12 grid gap-4 sm:grid-cols-2">
           {items.map(({ key, icon: Icon }) => (
             <div key={key} className="surface-card flex items-center gap-4 p-6">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-slate-300">

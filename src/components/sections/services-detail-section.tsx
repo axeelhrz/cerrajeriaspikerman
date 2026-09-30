@@ -23,7 +23,7 @@ export async function ServicesDetailSection() {
   return (
     <section id={sections.serviciosCompletos} className="section-dark scroll-mt-24 py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
-        <div className="mb-10 max-w-2xl">
+        <div className="reveal-on-scroll mb-10 max-w-2xl">
           <p className="section-tag-light">{t("eyebrow")}</p>
           <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-white md:text-3xl">
             {t("title")}
@@ -39,7 +39,7 @@ export async function ServicesDetailSection() {
               {t("keysTitle")}
             </h3>
           </div>
-          <div className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:grid-cols-4">
+          <div className="reveal-on-scroll reveal-stagger grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:grid-cols-4">
             {keyTypes.map(({ key, image }) => (
               <div key={key} className="surface-card flex flex-col text-center">
                 <div className="flex min-h-[132px] flex-1 items-center justify-center px-4 py-5 sm:min-h-[148px] sm:px-5 sm:py-6">
@@ -61,7 +61,7 @@ export async function ServicesDetailSection() {
         </div>
 
         {/* Segmentos */}
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="reveal-on-scroll reveal-stagger grid gap-4 md:grid-cols-2">
           {segments.map(({ key, icon: Icon }) => {
             const items = t.raw(`segments.${key}.items`) as string[];
             return (

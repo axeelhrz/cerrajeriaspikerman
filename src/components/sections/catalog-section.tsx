@@ -42,7 +42,7 @@ export function CatalogSection() {
     <section id={sections.cerraduras} className="section-dark scroll-mt-24 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         {/* Header */}
-        <div className="relative grid gap-8 border-b border-white/10 pb-10 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:pb-12">
+        <div className="reveal-on-scroll relative grid gap-8 border-b border-white/10 pb-10 lg:grid-cols-[1.2fr_1fr] lg:items-end lg:pb-12">
           <div>
             <p className="section-tag-light">{t("eyebrow")}</p>
             <h2 className="mt-4 text-2xl font-extrabold tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
@@ -98,7 +98,7 @@ export function CatalogSection() {
         </div>
 
         {/* Grid */}
-        <div className="mt-8 grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <div className="reveal-on-scroll reveal-stagger mt-8 grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {visible.map((product) => (
             <ProductCard
               key={product.slug}

@@ -25,7 +25,7 @@ export async function AccessControlSection() {
   return (
     <section id={sections.controlDeAccesos} className="section-dark scroll-mt-24 py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
-        <div className="mb-8 grid gap-6 lg:grid-cols-[1.2fr_1fr] lg:items-start">
+        <div className="reveal-on-scroll mb-8 grid gap-6 lg:grid-cols-[1.2fr_1fr] lg:items-start">
           <div>
             <p className="section-tag-light">{t("eyebrow")}</p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-white md:text-3xl">
@@ -51,7 +51,7 @@ export async function AccessControlSection() {
           </div>
         </div>
 
-        <div className="mb-10 grid grid-cols-1 gap-2 min-[480px]:grid-cols-2 lg:grid-cols-3">
+        <div className="reveal-on-scroll reveal-stagger mb-10 grid grid-cols-1 gap-2 min-[480px]:grid-cols-2 lg:grid-cols-3">
           {features.map(({ key, icon: Icon }) => (
             <div key={key} className="surface-card flex items-center gap-3 px-4 py-3">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-500/15 text-orange-400">

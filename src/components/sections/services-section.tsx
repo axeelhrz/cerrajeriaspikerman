@@ -44,7 +44,7 @@ export async function ServicesSection() {
   return (
     <section id={sections.servicios} className="section-dark scroll-mt-24 py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between md:mb-10">
+        <div className="reveal-on-scroll mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between md:mb-10">
           <div className="max-w-lg">
             <p className="section-tag-light">{t("eyebrow")}</p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-white md:text-3xl">
@@ -63,7 +63,7 @@ export async function ServicesSection() {
           </a>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="reveal-on-scroll reveal-stagger grid gap-3 sm:grid-cols-2">
           {featuredServices.map(({ icon: Icon, titleKey, descKey, image, section }, index) => (
             <a
               key={titleKey}

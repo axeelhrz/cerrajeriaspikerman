@@ -15,7 +15,7 @@ export async function TestimonialsSection() {
     <section className="section-dark py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
         {/* Header + rating */}
-        <div className="mb-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between md:mb-10">
+        <div className="reveal-on-scroll mb-8 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between md:mb-10">
           <div className="max-w-md">
             <p className="section-tag-light">{t("testimonialsEyebrow")}</p>
             <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-white md:text-3xl">
@@ -38,7 +38,7 @@ export async function TestimonialsSection() {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="reveal-on-scroll reveal-stagger grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map(({ name, text }) => (
             <figure
               key={name}
